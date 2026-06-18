@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code
+.vscode/
+.history/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Backup files
+*_old.*
+*.bak
+
+# Node (if used later)
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# Python (if used later)
+__pycache__/
+*.pyc
+
+# Build artifacts
+dist/
+build/
+
+# OS files
+Thumbs.db
+desktop.ini
