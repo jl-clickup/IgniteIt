@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!-- saved from url=(0129)https://t333.s.clickup-attachments-stg.com/t333/98509e38-8c3a-40d0-8da7-d6055f4b7d9a/igniteit_kickoff_rethemed_v12.html?view=open -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IgniteIt + ClickUp | Certified Agent Kickoff</title>
+  <style>
+    :root{
+      --cu-magenta:#FF02F0;
+      --cu-orange:#FC6D2D;
+      --cu-purple:#6647F0;
+      --cu-blue:#0091FF;
+      --cu-ink:#0F0F1E;
+      --cu-ink-soft:#30304A;
+      --cu-surface:#FFFFFF;
+      --cu-surface-tint:#F7F7FB;
+      --cu-line:#E5E7F2;
+      --cu-gradient-hero:linear-gradient(110deg,#6647F0 0%,#9B3BF0 45%,#FF02F0 100%);
+      --cu-gradient-cool:linear-gradient(to right,#6647F0 22.596%,#0091FF 79.327%);
+      --cu-gradient-warm:linear-gradient(to right,#FF02F0 0%,#FC6D2D 100%);
+      --shadow:0 24px 70px rgba(15,15,30,.10);
+      --radius:32px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:#eef1fb;color:var(--cu-ink);font-family:Inter,Arial,sans-serif}
+    body{padding:28px 18px 64px}
+    .deck{max-width:1480px;margin:0 auto;display:grid;gap:28px}
+    .slide{width:100%;min-height:clamp(760px,56vw,960px);background:var(--cu-surface);border:1px solid rgba(102,71,240,.10);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;position:relative;page-break-after:always}
+    .slide-shell{position:relative;min-height:inherit;padding:34px 42px 34px;display:flex;flex-direction:column}
+    .topbar{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;margin-bottom:22px}
+    .brand-lockup{display:flex;align-items:center;gap:12px}
+    .brand-lockup .label,.small-kicker,.section-label,.footer{font-family:"Sometype Mono",ui-monospace,monospace}
+    .brand-lockup .label,.small-kicker,.section-label{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#6A6B88}
+    .logo-mark{width:26px;height:26px;flex:none}
+    h1,h2,h3,h4,p{margin:0}
+    h1,h2,h3{font-family:"Plus Jakarta Sans",Inter,Arial,sans-serif}
+    h2{font-size:44px;line-height:1.04;letter-spacing:-.03em;margin-bottom:14px}
+    h3{font-size:22px;line-height:1.14;letter-spacing:-.02em}
+    .subtitle{font-size:18px;line-height:1.5;color:#5B5E78;max-width:920px}
+    .footer{margin-top:auto;padding-top:18px;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#6A6B88;letter-spacing:.05em;text-transform:uppercase}
+    .grid-2,.grid-3,.grid-4,.grid-5{display:grid;gap:18px}
+    .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .grid-5{grid-template-columns:repeat(5,minmax(0,1fr))}
+    .card{background:#fff;border:1px solid var(--cu-line);border-radius:26px;padding:22px;box-shadow:0 12px 32px rgba(15,15,30,.05)}
+    .soft-bg{background:radial-gradient(circle at top right,rgba(0,145,255,.12),transparent 25%),radial-gradient(circle at top left,rgba(255,2,240,.10),transparent 25%),var(--cu-surface-tint)}
+    .tinted{background:linear-gradient(180deg,#FFFFFF 0%,#FAFAFF 100%)}
+    .pill{display:inline-flex;align-items:center;padding:8px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-family:"Sometype Mono",ui-monospace,monospace}
+    .pill.purple{background:rgba(102,71,240,.10);color:var(--cu-purple)}
+    .pill.blue{background:rgba(0,145,255,.10);color:var(--cu-blue)}
+    .pill.magenta{background:rgba(255,2,240,.10);color:var(--cu-magenta)}
+    .pill.orange{background:rgba(252,109,45,.12);color:var(--cu-orange)}
+    .pill.gold{background:rgba(252,109,45,.14);color:#B34A18}
+    .cover{background:var(--cu-gradient-hero);color:#fff;border:none}
+    .cover .slide-shell{padding:34px 42px 30px;align-items:center;text-align:center}
+    .cover .brand-lockup .label,.cover .small-kicker,.cover .footer{color:rgba(255,255,255,.82)}
+    .cover .headline{margin:auto 0;text-align:center}
+    .cover h1{font-size:clamp(58px,7vw,112px);line-height:.98;letter-spacing:-.05em;margin-bottom:18px}
+    .cover .subtitle{color:rgba(255,255,255,.92);font-size:22px;max-width:760px}
+    .cover .corner-logo{position:absolute;right:42px;top:34px;display:flex;justify-content:flex-end;z-index:2}
+    .cover .corner-logo img{width:180px;max-width:24vw;height:auto;display:block;background:transparent;border:none;border-radius:0;padding:0;box-shadow:none}
+    .section-label{margin-bottom:14px}
+    .team-card,.agent-card,.agenda-item,.step-card,.detail-card{display:flex;flex-direction:column;gap:12px}
+    .team-card p,.agent-card p,.agenda-item p,.step-card p,.detail-card p,.mini-copy, li, td{font-size:16px;line-height:1.5;color:#555875}
+    .avatar{width:86px;height:86px;border-radius:24px;background:var(--cu-gradient-cool);display:flex;align-items:center;justify-content:center;color:#fff;font-family:"Plus Jakarta Sans",Inter,sans-serif;font-weight:800;font-size:28px;box-shadow:0 10px 24px rgba(102,71,240,.18)}
+    .avatar.photo{background:#fff;padding:0;overflow:hidden;border:1px solid rgba(102,71,240,.14);box-shadow:0 12px 30px rgba(15,15,30,.12)}
+    .avatar.photo img{width:100%;height:100%;object-fit:cover;display:block}
+    .avatar.photo.support{padding:14px;background:linear-gradient(180deg,#ffffff 0%,#f7f8ff 100%)}
+    .avatar.photo.support img{object-fit:contain}
+    .item-number{width:38px;height:38px;border-radius:999px;background:var(--cu-gradient-cool);display:flex;align-items:center;justify-content:center;color:#fff;font-family:"Plus Jakarta Sans",sans-serif;font-weight:800;font-size:16px;margin-bottom:8px}
+    .agenda-item{min-height:250px;background:linear-gradient(180deg,#FFFFFF 0%,#FBF8FF 100%)}
+    .agent-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:18px;margin-top:18px}
+    .agent-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .agent-card.primary{background:linear-gradient(180deg,#ffffff 0%,#f8f8ff 100%)}
+    .agent-card.secondary{background:linear-gradient(180deg,#ffffff 0%,#f7fbff 100%)}
+    .agent-visual{border:1px solid var(--cu-line);border-radius:28px;padding:22px;background:linear-gradient(180deg,#FFFFFF 0%,#FAFCFF 100%);box-shadow:0 12px 32px rgba(15,15,30,.05)}
+    .agent-visual img{width:100%;max-height:360px;object-fit:contain;object-position:center center;transform:scale(.76);transform-origin:center center;border-radius:22px;display:block;margin:0 auto 16px;border:1px solid rgba(102,71,240,.14);background:#fff;padding:12px}
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+    .chip{display:inline-flex;align-items:center;padding:8px 12px;border-radius:999px;background:#F5F6FF;border:1px solid var(--cu-line);font-size:13px;color:#474C69}
+    .process-fullbleed{flex:1;display:flex;align-items:center;justify-content:center;margin-top:18px}
+    .process-diagram-wrap{position:relative;display:inline-block;width:100%;max-width:980px;margin:0 auto}
+    .process-diagram-logos{position:absolute;top:10px;right:12px;display:flex;gap:18px;align-items:center;z-index:6}
+    .process-diagram-logos img{height:72px;width:auto;display:block;background:rgba(255,255,255,.96);border:1px solid var(--cu-line);border-radius:16px;padding:8px 12px;box-shadow:0 10px 24px rgba(15,15,30,.08)}
+    .process-diagram-logos img.igniteit{height:76px;background:transparent;border:none;border-radius:0;padding:0;box-shadow:none}
+    .process-fullbleed-image{width:100%;height:auto;max-height:62vh;object-fit:contain;border-radius:28px;background:white;box-shadow:0 18px 60px rgba(15,15,30,.10);padding:10px;border:1px solid var(--cu-line)}
+    .timeline-note{margin-bottom:16px}
+    .timeline-shell{margin-top:18px;padding:24px;border-radius:28px;background:linear-gradient(180deg,#FFFFFF,#F8FAFF);border:1px solid var(--cu-line)}
+    .timeline-grid{display:grid;grid-template-columns:150px 1fr;gap:16px;align-items:start;margin-top:16px}
+    .lane-label{border-radius:20px;padding:20px 14px;color:#fff;min-height:180px;display:flex;align-items:center;justify-content:center;text-align:center;font-family:"Plus Jakarta Sans",sans-serif;font-size:24px;font-weight:800;line-height:1.1}
+    .lane-label.onboarding{background:var(--cu-gradient-warm)}
+    .lane-label.delivery{background:var(--cu-gradient-cool)}
+    .lane-label.agents{background:var(--cu-gradient-cool)}
+    .lane-track{padding:12px 0 0;position:relative}
+    .lane-track::before{content:'';position:absolute;left:18px;right:18px;top:34px;height:3px;background:linear-gradient(90deg,rgba(102,71,240,.18),rgba(0,145,255,.35),rgba(255,2,240,.18));border-radius:999px}
+    .milestones{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;position:relative;z-index:1}
+    .mile{padding:0 4px}
+    .marker{width:22px;height:22px;border-radius:999px;background:#fff;border:5px solid var(--cu-purple);box-shadow:0 0 0 4px rgba(102,71,240,.08);margin:0 auto 12px}
+    .diamond{width:22px;height:22px;background:#fff;border:5px solid #FC6D2D;transform:rotate(45deg);margin:0 auto 12px;box-shadow:0 0 0 4px rgba(252,109,45,.12)}
+    .mile-card{border:1px solid var(--cu-line);border-radius:22px;background:#fff;padding:16px;min-height:156px;box-shadow:0 10px 26px rgba(15,15,30,.05)}
+    .mile-card h3{font-size:18px;line-height:1.15;margin-bottom:8px}
+    .mile-card p{font-size:14px;line-height:1.45;color:#5C607D}
+    .steps-grid{margin-top:18px}
+    .step-card{min-height:240px}
+    ul{margin:0;padding-left:18px}
+    @media (max-width:1200px){
+      .grid-5,.grid-4,.grid-3,.grid-2,.agent-layout,.agent-cards,.timeline-grid,.steps-grid{grid-template-columns:1fr}
+      .milestones{grid-template-columns:1fr}
+      .lane-track::before{display:none}
+      .lane-label{min-height:unset}
+      .slide{min-height:auto}
+      .cover h1{font-size:64px}
+      .cover .corner-logo{position:static;justify-content:center;margin-bottom:20px}
+      .cover .corner-logo img{max-width:60vw}
+      .process-diagram-logos{position:static;justify-content:flex-end;margin-bottom:12px}
+      .process-diagram-logos img{height:56px}
+      .process-diagram-logos img.igniteit{height:60px}
+    }
+  </style>
+</head>
+<body>
+  <div class="deck">
+    <section class="slide cover">
+      <div class="slide-shell">
+        <div class="corner-logo"><img alt="IgniteIt logo" src="./v5_IgniteIt + ClickUp _ Certified Agent Kickoff_files/igniteit_inc_logo.jpeg"></div>
+        <div class="topbar" style="width:100%;">
+          <div class="brand-lockup">
+            <svg class="logo-mark" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.43828 50.2095C5.81176 49.4456 5.94882 48.3212 6.71918 47.7027L14.0169 41.8433C14.6535 41.3322 15.5841 41.4476 16.1032 42.0777C21.06 48.0956 26.32 50.8815 32.142 50.8815C37.9238 50.8815 43.0403 48.135 47.7801 42.1839C48.2888 41.5452 49.2172 41.4131 49.8629 41.9129L57.2604 47.6377C58.0415 48.2422 58.1989 49.3637 57.5855 50.1379C50.5775 58.9839 41.9971 63.6446 32.142 63.6446C22.3156 63.6446 13.6586 59.013 6.43828 50.2095Z" fill="url(#paint0_cover)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M32.4953 17.1804C32.2202 16.9368 31.8067 16.9367 31.5314 17.1801L15.663 31.2116C15.0564 31.748 14.1285 31.6857 13.599 31.0731L7.40986 23.9122C6.88774 23.3082 6.95019 22.3961 7.54979 21.8688L31.0527 1.20062C31.6021 0.717503 32.4248 0.717611 32.9741 1.20088L56.4822 21.8847C57.0822 22.4125 57.1439 23.3256 56.6205 23.9294L50.4164 31.0866C49.8862 31.6982 48.9589 31.7594 48.353 31.2229L32.4953 17.1804Z" fill="url(#paint1_cover)"></path><defs><lineargradient id="paint0_cover" x1="5.3335" y1="32.1624" x2="58.6653" y2="32.1624" gradientUnits="userSpaceOnUse"><stop offset="0.225962" stop-color="#6647F0"></stop><stop offset="0.793269" stop-color="#0091FF"></stop></lineargradient><lineargradient id="paint1_cover" x1="5.3335" y1="31.6447" x2="58.6653" y2="31.6447" gradientUnits="userSpaceOnUse"><stop stop-color="#FF02F0"></stop><stop offset="0.778846" stop-color="#F76808"></stop></lineargradient></defs></svg>
+            <div><div class="label">ClickUp Professional Services</div></div>
+          </div>
+          <div class="small-kicker">IgniteIt kickoff</div>
+        </div>
+        <div class="headline">
+          <h1>IgniteIt<br>+<br>ClickUp</h1>
+          <p class="subtitle">Kickoff alignment on priorities, workflow design, and the delivery path for IgniteIt’s certified-agent implementation.</p>
+        </div>
+        <div class="footer"><span>Fri Jun 19, 2026</span><span>Certified Agent kickoff</span></div>
+      </div>
+    </section>
+
+    <section class="slide soft-bg">
+      <div class="slide-shell">
+        <div class="topbar">
+          <div class="brand-lockup">
+            <svg class="logo-mark" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.43828 50.2095C5.81176 49.4456 5.94882 48.3212 6.71918 47.7027L14.0169 41.8433C14.6535 41.3322 15.5841 41.4476 16.1032 42.0777C21.06 48.0956 26.32 50.8815 32.142 50.8815C37.9238 50.8815 43.0403 48.135 47.7801 42.1839C48.2888 41.5452 49.2172 41.4131 49.8629 41.9129L57.2604 47.6377C58.0415 48.2422 58.1989 49.3637 57.5855 50.1379C50.5775 58.9839 41.9971 63.6446 32.142 63.6446C22.3156 63.6446 13.6586 59.013 6.43828 50.2095Z" fill="url(#g2a)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M32.4953 17.1804C32.2202 16.9368 31.8067 16.9367 31.5314 17.1801L15.663 31.2116C15.0564 31.748 14.1285 31.6857 13.599 31.0731L7.40986 23.9122C6.88774 23.3082 6.95019 22.3961 7.54979 21.8688L31.0527 1.20062C31.6021 0.717503 32.4248 0.717611 32.9741 1.20088L56.4822 21.8847C57.0822 22.4125 57.1439 23.3256 56.6205 23.9294L50.4164 31.0866C49.8862 31.6982 48.9589 31.7594 48.353 31.2229L32.4953 17.1804Z" fill="url(#g2b)"></path><defs><lineargradient id="g2a" x1="5.3335" y1="32.1624" x2="58.6653" y2="32.1624" gradientUnits="userSpaceOnUse"><stop offset="0.225962" stop-color="#6647F0"></stop><stop offset="0.793269" stop-color="#0091FF"></stop></lineargradient><lineargradient id="g2b" x1="5.3335" y1="31.6447" x2="58.6653" y2="31.6447" gradientUnits="userSpaceOnUse"><stop stop-color="#FF02F0"></stop><stop offset="0.778846" stop-color="#F76808"></stop></lineargradient></defs></svg>
+            <div class="label">ClickUp Professional Services</div>
+          </div>
+          <div class="small-kicker">01 · account team</div>
+        </div>
+        <div class="section-label">Your ClickUp account team</div>
+        <h2>Your ClickUp account team</h2>
+        <p class="subtitle">The IgniteIt kickoff is supported by a lean team aligned around certified-agent design, customer continuity, solution shaping, and commercial context.</p>
+        <div class="grid-4" style="margin-top:18px;">
+          <div class="card team-card">
+            <div class="avatar photo"><img alt="Jen Chen headshot" src="./v5_IgniteIt + ClickUp _ Certified Agent Kickoff_files/jen_headshot.jpg"></div>
+            <div class="pill purple">Senior AI Consultant</div>
+            <h3>Jen Chen</h3>
+            <p>Leads certified-agent discovery, workflow design, kickoff facilitation, and delivery planning for the IgniteIt engagement.</p>
+          </div>
+          <div class="card team-card">
+            <div class="avatar photo"><img alt="Yul Vince Aranas headshot" src="./v5_IgniteIt + ClickUp _ Certified Agent Kickoff_files/yul_headshot.jpg"></div>
+            <div class="pill blue">Customer Success Manager</div>
+            <h3>Yul Vince Aranas</h3>
+            <p>Supports continuity after kickoff, helps align adoption planning, and partners on long-term customer success.</p>
+          </div>
+          <div class="card team-card">
+            <div class="avatar photo"><img alt="Callie Ammons headshot" src="./v5_IgniteIt + ClickUp _ Certified Agent Kickoff_files/callie_headshot.jpg"></div>
+            <div class="pill orange">Account Executive</div>
+            <h3>Callie Ammons</h3>
+            <p>Provides commercial context, deal framing, and continuity on the business objectives behind the engagement.</p>
+          </div>
+          <div class="card team-card">
+            <div class="avatar photo support"><img alt="ClickUp logo" src="./v5_IgniteIt + ClickUp _ Certified Agent Kickoff_files/clickup-1947b59f651163363488367206cf0438.png"></div>
+            <div class="pill magenta">ClickUp Support</div>
+            <h3>ClickUp Support</h3>
+            <p>For product support or break/fix help, contact <a href="mailto:help@clickup.com">help@clickup.com</a>.</p>
+          </div>
+        </div>
+        <div class="footer"><span>IgniteIt + ClickUp</span><span>Account team</span></div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-shell">
+        <div class="topbar">
+          <div class="brand-lockup"><div class="label">ClickUp Professional Services</div></div>
+          <div class="small-kicker">02 · meeting objectives</div>
+        </div>
+        <div class="section-label">Meeting objective</div>
+        <h2>Meeting Objective</h2>
+        <p class="subtitle">Use the kickoff to confirm what phase 1 should do, how the workflow should operate, and which broader ideas belong in a later phase.</p>
+        <div class="grid-3" style="margin-top:18px;">
+          <div class="card agenda-item">
+            <div class="item-number">1</div>
+            <h3>Confirm the phase-1 scope</h3>
+            <p>Validate that the signed implementation centers on one certified agent for sponsorship-contract intake and deliverables extraction, while capturing future-state ideas separately.</p>
+          </div>
+          <div class="card agenda-item">
+            <div class="item-number">2</div>
+            <h3>Define the operating design</h3>
+            <p>Align on the trigger surface, required field extraction, task and subtask hierarchy, and where human review should happen before downstream work is created.</p>
+          </div>
+          <div class="card agenda-item">
+            <div class="item-number">3</div>
+            <h3>Set the delivery path</h3>
+            <p>Agree on system-of-record decisions, stakeholder ownership, validation checkpoints, and the implementation sequence needed to move into build with confidence.</p>
+          </div>
+        </div>
+        <div class="footer"><span>IgniteIt + ClickUp</span><span>Meeting objective</span></div>
+      </div>
+    </section>
+
+    <section class="slide soft-bg">
+      <div class="slide-shell">
+        <div class="topbar">
+          <div class="brand-lockup"><div class="label">ClickUp Professional Services</div></div>
+          <div class="small-kicker">03 · certified agents</div>
+        </div>
+        <div class="section-label">Your certified agents</div>
+        <h2>Start with one high-value workflow, then expand with confidence</h2>
+        <p class="subtitle">The current deck centers on the confirmed initial delivery while preserving the broader IgniteIt opportunity as future-state context.</p>
+        <div class="agent-layout">
+          <div class="agent-cards">
+            <div class="agent-card primary">
+              <div class="pill purple">Agent 1 · confirmed current scope</div>
+              <h3>Contract Intake &amp; Deliverables Extraction</h3>
+              <p>When a signed conference sponsorship contract arrives, the agent reads the agreement, extracts key details into structured fields, writes deliverables into the task context, and creates conference and deliverables work items.</p>
+              <div class="chips">
+                <span class="chip">Extract contact details</span>
+                <span class="chip">Capture revenue figures</span>
+                <span class="chip">Write deliverables into context</span>
+                <span class="chip">Create conference work items</span>
+              </div>
+            </div>
+            <div class="agent-card secondary">
+              <div class="pill blue">Future opportunity</div>
+              <h3>Meeting &amp; Action Capture</h3>
+              <p>A natural follow-on opportunity is capturing standups, planning sessions, and internal follow-up so actions do not stay trapped in notes, messages, or tribal knowledge.</p>
+              <div class="chips">
+                <span class="chip">Capture action items</span>
+                <span class="chip">Improve follow-through</span>
+                <span class="chip">Standardize accountability</span>
+              </div>
+            </div>
+            <div class="agent-card" style="grid-column:1 / -1;">
+              <div class="pill gold">Design principle</div>
+              <h3>Build for repeatability first</h3>
+              <p>The goal is not only speed. The first workflow should be trustworthy, easy to validate, and reusable across future sponsors, events, and internal operating teams.</p>
+            </div>
+          </div>
+          <div class="agent-visual">
+            <img alt="Certified agent illustration" src="./v5_IgniteIt + ClickUp _ Certified Agent Kickoff_files/agent_headshot.png">
+            <div class="pill magenta">Visual cue</div>
+            <h3>Use AI where manual handoffs happen today</h3>
+            <p>IgniteIt’s strongest automation opportunity is where contracts are interpreted manually, details are re-entered across systems, and downstream work depends on memory or follow-up.</p>
+          </div>
+        </div>
+        <div class="footer"><span>IgniteIt + ClickUp</span><span>Certified agents</span></div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-shell">
+        <div class="topbar">
+          <div class="brand-lockup"><div class="label">ClickUp Professional Services</div></div>
+          <div class="small-kicker">04 · why this matters now</div>
+        </div>
+        <div class="section-label">Current state</div>
+        <h2>Why this matters now</h2>
+        <p class="subtitle">IgniteIt is trying to support a lean team and growing event complexity without adding more fragmented tools, duplicate work, or manual handoffs.</p>
+        <div class="grid-2" style="margin-top:18px;">
+          <div class="card tinted">
+            <div class="pill orange">Operating reality</div>
+            <ul style="margin-top:14px;">
+              <li>Work is spread across ClickUp, Airtable, ActiveCampaign, Trello, Canva, Google Sheets, DocuSign, email, text, and event tooling.</li>
+              <li>Contract details and sponsor deliverables are re-entered manually, which increases mistakes and slows follow-through.</li>
+              <li>A lean team is supporting roughly six events per year, with readiness depending too heavily on memory and disconnected repositories.</li>
+            </ul>
+          </div>
+          <div class="card tinted">
+            <div class="pill blue">Desired outcome</div>
+            <ul style="margin-top:14px;">
+              <li>One clear intake path when a signed sponsorship contract arrives.</li>
+              <li>Structured details captured once and reused across downstream work.</li>
+              <li>Cleaner visibility into sponsor obligations, event readiness, and what is complete, outstanding, or at risk.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid-3" style="margin-top:18px;">
+          <div class="card detail-card"><div class="pill purple">Scale</div><h3>Lean team, heavy coordination load</h3><p>Automation matters most where it removes repetitive interpretation and task setup.</p></div>
+          <div class="card detail-card"><div class="pill magenta">Consistency</div><h3>Repeat the right steps every time</h3><p>Standardized contract-to-work logic reduces dropped handoffs and missed obligations.</p></div>
+          <div class="card detail-card"><div class="pill gold">Visibility</div><h3>See readiness sooner</h3><p>Better structure makes it easier for leadership and operators to identify blockers before events go live.</p></div>
+        </div>
+        <div class="footer"><span>IgniteIt + ClickUp</span><span>Why this matters now</span></div>
+      </div>
+    </section>
+
+    <section class="slide soft-bg">
+      <div class="slide-shell">
+        <div class="topbar">
+          <div class="brand-lockup"><div class="label">ClickUp Professional Services</div></div>
+          <div class="small-kicker">05 · process mapping</div>
+        </div>
+        <div class="section-label">Process mapping / IER</div>
+        <h2>Translate contract intake into reliable execution</h2>
+        <p class="subtitle">Use kickoff to validate the intake trigger, trusted field mapping, and the downstream structure IgniteIt wants created automatically.</p>
+        <div class="process-fullbleed" style="margin-top:24px;justify-content:center;align-items:center;flex:1;">
+          <div class="process-diagram-wrap">
+            <div class="process-diagram-logos">
+              <img class="igniteit" alt="IgniteIt logo" src="./v5_IgniteIt + ClickUp _ Certified Agent Kickoff_files/igniteit_inc_logo.jpeg">
+              <img alt="ClickUp logo" src="./v5_IgniteIt + ClickUp _ Certified Agent Kickoff_files/clickup-1947b59f651163363488367206cf0438.png">
+            </div>
+            <img class="process-fullbleed-image" style="max-width:980px;max-height:64vh;margin:0 auto;" alt="IgniteIt process mapping" src="./v5_IgniteIt + ClickUp _ Certified Agent Kickoff_files/v4_process_mapping.png">
+          </div>
+        </div>
+        <div class="footer"><span>IgniteIt + ClickUp</span><span>Process mapping</span></div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-shell">
+        <div class="topbar"><div class="brand-lockup"><svg class="logo-mark" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.43828 50.2095C5.81176 49.4456 5.94882 48.3212 6.71918 47.7027L14.0169 41.8433C14.6535 41.3322 15.5841 41.4476 16.1032 42.0777C21.06 48.0956 26.32 50.8815 32.142 50.8815C37.9238 50.8815 43.0403 48.135 47.7801 42.1839C48.2888 41.5452 49.2172 41.4131 49.8629 41.9129L57.2604 47.6377C58.0415 48.2422 58.1989 49.3637 57.5855 50.1379C50.5775 58.9839 41.9971 63.6446 32.142 63.6446C22.3156 63.6446 13.6586 59.013 6.43828 50.2095Z" fill="url(#g7a)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M32.4953 17.1804C32.2202 16.9368 31.8067 16.9367 31.5314 17.1801L15.663 31.2116C15.0564 31.748 14.1285 31.6857 13.599 31.0731L7.40986 23.9122C6.88774 23.3082 6.95019 22.3961 7.54979 21.8688L31.0527 1.20062C31.6021 0.717503 32.4248 0.717611 32.9741 1.20088L56.4822 21.8847C57.0822 22.4125 57.1439 23.3256 56.6205 23.9294L50.4164 31.0866C49.8862 31.6982 48.9589 31.7594 48.353 31.2229L32.4953 17.1804Z" fill="url(#g7b)"></path><defs><lineargradient id="g7a" x1="5.3335" y1="32.1624" x2="58.6653" y2="32.1624" gradientUnits="userSpaceOnUse"><stop offset="0.225962" stop-color="#6647F0"></stop><stop offset="0.793269" stop-color="#0091FF"></stop></lineargradient><lineargradient id="g7b" x1="5.3335" y1="31.6447" x2="58.6653" y2="31.6447" gradientUnits="userSpaceOnUse"><stop stop-color="#FF02F0"></stop><stop offset="0.778846" stop-color="#F76808"></stop></lineargradient></defs></svg><div class="label">ClickUp Professional Services</div></div><div class="small-kicker">06 · timeline</div></div>
+        <div class="section-label">Timeline</div>
+        <h2>Timeline</h2>
+        <div class="timeline-shell">
+          <div class="timeline-note"><div class="pill orange">Build Package Signoff is the approval gate before build starts</div></div>
+          <div class="timeline-grid">
+            <div class="lane-label onboarding">Onboarding</div>
+            <div class="lane-track"><div class="milestones">
+              <div class="mile"><div class="marker"></div><div class="mile-card"><h3>Project Kickoff</h3><p>Align goals, stakeholders, delivery plan, and the starting assumptions for the 3-agent package.</p></div></div>
+              <div class="mile"><div class="marker"></div><div class="mile-card"><h3>Discovery &amp; Design</h3><p>Review representative protocols, process flows, approval gates, and the initial workflow architecture.</p></div></div>
+              <div class="mile"><div class="marker"></div><div class="mile-card"><h3>Solution Design</h3><p>Translate the approved workflow into agent triggers, outputs, review points, and data requirements.</p></div></div>
+              <div class="mile"><div class="diamond"></div><div class="mile-card"><h3>Build Package Signoff</h3><p>Approve scope, design, and readiness before build work begins.</p></div></div>
+              <div class="mile"><div class="marker"></div><div class="mile-card"><h3>Build / Configuration</h3><p>Configure the approved agent logic, workflow structure, and reporting setup in the delivery environment.</p></div></div>
+            </div></div>
+            <div class="lane-label agents">Certified Agents</div>
+            <div class="lane-track"><div class="milestones">
+              <div class="mile"><div class="marker"></div><div class="mile-card"><h3>Validation</h3><p>Test against real protocol and execution examples, then refine exceptions and approval paths.</p></div></div>
+              <div class="mile"><div class="marker"></div><div class="mile-card"><h3>UAT</h3><p>Run user acceptance testing after build and validation to confirm readiness for team adoption.</p></div></div>
+              <div class="mile"><div class="marker"></div><div class="mile-card"><h3>Training</h3><p>Prepare owners and users for launch, governance, escalation handling, and expected operating cadence.</p></div></div>
+              <div class="mile"><div class="marker"></div><div class="mile-card"><h3>Go-Live</h3><p>Complete the launch checklist, transition ownership, and begin optimization from a live baseline.</p></div></div>
+              <div class="mile"><div class="marker"></div><div class="mile-card"><h3>Support</h3><p>Carry forward into post-launch optimization and future improvements.</p></div></div>
+            </div></div>
+          </div>
+        </div>
+        <div class="footer"><span>Timeline</span><span>07</span></div>
+      </div>
+    </section>
+
+    <section class="slide soft-bg">
+      <div class="slide-shell">
+        <div class="topbar">
+          <div class="brand-lockup"><div class="label">ClickUp Professional Services</div></div>
+          <div class="small-kicker">07 · immediate next steps</div>
+        </div>
+        <div class="section-label">Immediate next steps</div>
+        <h2>Immediate Next Steps</h2>
+        <p class="subtitle">These are the immediate actions needed to keep implementation moving and support a smooth start to recurring working sessions.</p>
+        <div class="grid-3 steps-grid">
+          <div class="card step-card"><div class="item-number">1</div><h3>Grant admin access to the IgniteIt workspace</h3><p>Provide workspace admin access so configuration, permissions, and implementation setup can move forward without blockers.</p></div>
+          <div class="card step-card"><div class="item-number">2</div><h3>Decide on stakeholders for recurring working sessions</h3><p>Confirm which customer-side stakeholders should participate in recurring working sessions for design, review, validation, and decisions.</p></div>
+          <div class="card step-card"><div class="item-number">3</div><h3>Provide any artifacts or SOPs describing the workflows</h3><p>Share any process docs, SOPs, screenshots, diagrams, or supporting artifacts that explain how the current workflows operate today.</p></div>
+        </div>
+        <div class="footer"><span>IgniteIt + ClickUp</span><span>Immediate next steps</span></div>
+      </div>
+    </section>
+  </div>
+
+
+</body></html>
